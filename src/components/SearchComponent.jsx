@@ -1,6 +1,8 @@
-import { useEffect,useState } from "react";
+import { useState } from "react";
 import './SearchComponent.css';
 import Streamer from "./Streamer";
+import PropTypes from 'prop-types';
+
 export default function SearchComponent({ onAvatarClick }){
  const [filterMenuVisible, setFilterMenuVisible] = useState(false);
  const [selectedGenre, setSelectedGenre] = useState('');
@@ -17,7 +19,7 @@ export default function SearchComponent({ onAvatarClick }){
     { name: 'Perxhita', games: ['GTA V', 'FIFA', 'Pokemon', 'Minecraft'], genres: ['SandBox', 'Action'], avatar: 'https://static-cdn.jtvnw.net/jtv_user_pictures/6213a284-c133-41cf-ad99-ebef738eb550-profile_image-150x150.png' },
 
 ];
-const handleFilterToggle = () => {
+const handleFilterToggle = () => { 
     setFilterMenuVisible(!filterMenuVisible);
 };
 const handleSearch = () => {
@@ -92,5 +94,8 @@ return(
         </section>
     </div>
 )
-
 }
+
+SearchComponent.propTypes = {
+    onAvatarClick: PropTypes.func.isRequired,
+};

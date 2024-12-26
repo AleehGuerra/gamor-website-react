@@ -1,4 +1,3 @@
-import react,{useState} from 'react';
 import CateoryCard from '../components/CategoryCard';
 
 export default function Categories(){

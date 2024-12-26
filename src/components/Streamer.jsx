@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 export default function Streamer({index, name, avatar, onAvatarClick}){
     return(
         <div className="flex flex-row w-full">
@@ -13,3 +14,10 @@ export default function Streamer({index, name, avatar, onAvatarClick}){
         </div>
     )
     }
+
+    Streamer.propTypes = {
+        index: PropTypes.number.isRequired,
+        name: PropTypes.string.isRequired,
+        avatar: PropTypes.string.isRequired,
+        onAvatarClick: PropTypes.func.isRequired,
+    };

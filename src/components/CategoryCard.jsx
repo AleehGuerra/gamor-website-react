@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
+import PropTypes from 'prop-types';
 
 export default function CateorieCard({name,rank,backgroundImage}){
     const [isHovered, setIsHovered] = useState(false);
@@ -27,3 +28,8 @@ export default function CateorieCard({name,rank,backgroundImage}){
       </div>  
     )
 }
+CateorieCard.propTypes = {
+    name: PropTypes.string.isRequired,
+    rank: PropTypes.oneOfType([PropTypes.string, PropTypes.number]).isRequired,
+    backgroundImage: PropTypes.string.isRequired,
+};

@@ -1,4 +1,3 @@
-import { useState,useEffect } from "react";
 export default function NavBarPlatform(){
     return(
         <nav className="rounded-full bg-gray-700/20 shadow-2xl h-12 mt-7">
