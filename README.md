@@ -1,8 +1,18 @@
-# React + Vite
+Examen FrontEnd Engineer
+El sitio web consta de las siguientes secciones.
+    • Pagina principal
+        ◦ Navbar(Link de registro y login de la aplicación).
+        ◦ Sección Principal(Main Board).
+        ◦ Sección de Categorías.
+    • Página de autenticación(Login).
+        ◦ Para esta página no se facilita ningún diseño, el candidato debe proporcionar uno en la entrega del ejercicio.
+    • Página de Registro(Esta página no será evaluada, no debe ser maquetada sólo deben aparecer los links en la página principal).
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+El sitio debe ser funcional con datos almacenados de manera estática o utilizando alguna herramienta en la nube como (Twitch).
+Los elementos funcionales serán los siguientes:
+    • Autenticacion.
+    • Cambio de tema de sitio web.
+    • Búsqueda de juego
+        ◦ En esta sesión se debe poder hacer búsquedas de los juegos que correspondan con los filtros aplicados.
+        ◦ Al dar click en el signo de suma en el panel de búsqueda el usuario será adicionado en el panel del centro.
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
